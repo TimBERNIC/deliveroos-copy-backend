@@ -12,7 +12,7 @@ app.get("/", async (req, res) => {
       "https://lereacteur-bootcamp-api.herokuapp.com/api/deliveroo/menu/paris/3eme-temple/sub-arc-subway-rambuteau?day=today&geohash=u09wj8rk5bqr&time=ASAP",
       {
         headers: {
-          Authorization: `Bearer ${response.data}`,
+          Authorization: `Bearer ${process.env.API_KEY}`,
         },
       }
     );
