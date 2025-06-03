@@ -17,7 +17,7 @@ app.get("/", async (req, res) => {
       }
     );
 
-    res.status(200).json("requete API recu");
+    res.status(200).json(response.data);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
